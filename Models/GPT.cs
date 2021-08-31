@@ -10,7 +10,7 @@ namespace GiaiptBac1.Models
         public double Timx(double a , double b)
         {
             double gtx = 0;
-            gtx=b/a;
+            gtx=-b/a;
             return gtx;
         }
     }
