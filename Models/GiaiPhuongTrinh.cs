@@ -5,7 +5,7 @@ using System.Web;
 
 namespace GiaiptBac1.Models
 {
-    public class GPT
+    public class GiaiPhuongTrinh
     {
         public double Timx(double a , double b)
         {
