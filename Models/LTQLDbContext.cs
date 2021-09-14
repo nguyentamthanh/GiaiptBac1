@@ -13,18 +13,16 @@ namespace GiaiptBac1.Models
         {
         }
         public virtual DbSet<Student> Students { get; set; }
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Student>()
-                .Property(e=>e.Studentname)
-                .IsUnicode(false)
-        }
         public virtual DbSet<Account> Accounts { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>()
             .Property(e => e.Username)
             .IsUnicode(false);
+            modelBuilder.Entity<Student>()
+                .Property(e => e.StudentID)
+                .IsUnicode(false);
+
         }
     }
 }
