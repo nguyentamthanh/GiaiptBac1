@@ -7,7 +7,7 @@ using System.Web;
 
 namespace GiaiptBac1.Models
 {
-    [Table]
+    [Table("Student")]
     public class Student
     {
         [Key]

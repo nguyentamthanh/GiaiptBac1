@@ -12,7 +12,7 @@ namespace GiaiptBac1.Models
         public LTQLDbContext() : base("name=LTQLDbContext")
         {
         }
-        public virtual DbSet<Account> Students { get; set; }
+        public virtual DbSet<Student> Students { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Student>()
