@@ -6,10 +6,12 @@ using System.Web;
 
 namespace GiaiptBac1.Models
 {
-    public class Account
+    public class Employee
     {
         [Key]
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string EmployeeId { get; set; }
+        public string EmployeeName { get; set; }
+        public DateTime EmployeeBirth { get; set; }
+
     }
 }

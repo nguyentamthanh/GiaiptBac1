@@ -13,5 +13,6 @@ namespace GiaiptBac1.Models
         [Key]
         public string StudentID { get; set; }
         public string Studentname { get; set; }
+        public string Address { get; set; }
     }
 }

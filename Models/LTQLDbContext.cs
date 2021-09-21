@@ -14,6 +14,7 @@ namespace GiaiptBac1.Models
         }
         public virtual DbSet<Student> Students { get; set; }
         public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>()
@@ -22,7 +23,9 @@ namespace GiaiptBac1.Models
             modelBuilder.Entity<Student>()
                 .Property(e => e.StudentID)
                 .IsUnicode(false);
-
+            modelBuilder.Entity<Employee>()
+                .Property(e => e.EmployeeId)
+                .IsUnicode(false);
         }
     }
 }
