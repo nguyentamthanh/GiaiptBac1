@@ -126,6 +126,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -141,8 +142,13 @@
     <Compile Include="Migrations\202109210115363_Migration_Employee_Table.designer.cs">
       <DependentUpon>202109210115363_Migration_Employee_Table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109280252573_Migration_table_Customer.cs" />
+    <Compile Include="Migrations\202109280252573_Migration_table_Customer.Designer.cs">
+      <DependentUpon>202109280252573_Migration_table_Customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\GiaiPhuongTrinh.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
@@ -197,6 +203,11 @@
     <Content Include="Views\Student\Delete.cshtml" />
     <Content Include="Views\Student\Details.cshtml" />
     <Content Include="Views\Student\Edit.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -220,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109210115363_Migration_Employee_Table.resx">
       <DependentUpon>202109210115363_Migration_Employee_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109280252573_Migration_table_Customer.resx">
+      <DependentUpon>202109280252573_Migration_table_Customer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
