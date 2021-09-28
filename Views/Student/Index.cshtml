@@ -13,6 +13,10 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.StudentID)
+        </th>
+
+        <th>
             @Html.DisplayNameFor(model => model.Studentname)
         </th>
         <th>
@@ -22,19 +26,22 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Studentname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Address)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.StudentID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.StudentID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.StudentID })
-        </td>
-    </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.StudentID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Studentname)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Address)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.StudentID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.StudentID })
+    </td>
+</tr>
 }
 
 </table>
