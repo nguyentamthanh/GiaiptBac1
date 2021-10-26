@@ -16,6 +16,7 @@ namespace GiaiptBac1.Models
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Person> Persons { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>()
